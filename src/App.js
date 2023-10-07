@@ -1,24 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import './index.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Services from './pages/Services';
+import KnowledgeBase from './pages/KnowledgeBase';
+import Calculators from './pages/Calculators';
+import NotFound from './pages/NotFound';
+
+import NavBar from './components/NavBar'
+import Footer from './components/Footer';
+import MoneyManagement from './pages/MoneyManagement';
+
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <NavBar />
+        <div>
+          <Switch>
+            <Route exact path="/Home">
+              <Home />
+            </Route>
+            <Route exact path="/About">
+              <About />
+            </Route>
+            <Route exact path="/Contact">
+              <Contact />
+            </Route>
+            <Route exact path="/Services">
+              <Services />
+            </Route>
+            <Route exact path="/KnowledgeBase">
+              <KnowledgeBase />
+            </Route>
+            <Route exact path="/Calculators">
+              <Calculators />
+            </Route>
+            <Route exact path="/MoneyManagement">
+              <MoneyManagement />
+            </Route>
+            <Route path="*">
+              <NotFound />
+            </Route>
+          </Switch>
+        </div>  
+          <Footer />
+      </div>
+    </Router>
   );
 }
 
