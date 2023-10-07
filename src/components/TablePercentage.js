@@ -23,24 +23,6 @@ const TablePercent = () => {
       takeProfitPoints: '',
       takeProfitPrice: '',
     },
-    {
-      id: 2,
-      currentBalance: 300,
-      riskPercent: 1,
-      riskMoney: '',
-      rewardPercent: 3,
-      rewardMoney: '',
-      tradeDate: "",
-      pair: 'GBPUSD',
-      direction: 'SELL',
-      lotSize: 0.01,
-      openPrice: 0.00801,
-      stopLossPoints: '',
-      stopLossPrice: '',
-      takeProfitPoints: '',
-      takeProfitPrice: '',
-
-    },
     // Add more rows as needed
   ]);
 
