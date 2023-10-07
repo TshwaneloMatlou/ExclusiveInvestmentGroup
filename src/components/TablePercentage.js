@@ -125,8 +125,8 @@ const TablePercent = () => {
   };
 
   return (
-    <div className="overflow-x-auto max-w-screen-lg mx-auto text-center border border-red-600">
-        <h1 className='font-semibold'>Template for (Consistent Percentage)</h1>
+    <div className='shadow-lg shadow-blue-400 border-2 border-yellow-300 p-5'>
+      <h1 className='font-bold text-[25px] bg-yellow-300'>Template for (Consistent Percentage)</h1>
       <table className="min-w-full bg-white border border-collapse border-black rounded-lg">
         <thead>
           <tr className="bg-gray-100">

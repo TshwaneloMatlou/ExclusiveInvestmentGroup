@@ -72,7 +72,7 @@ const NavBar = () => {
             </li>
             <li>
               <Link to="/MoneyManagement" className="text-white hover:text-blue-200">
-              Money_Management
+              Trade_Management
               </Link>
             </li>
           </ul>

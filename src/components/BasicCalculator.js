@@ -1,11 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 function BasicCalculator() {
   const [input, setInput] = useState('');
   const [result, setResult] = useState('');
+  const inputRef = useRef(null);
 
   const handleInput = (value) => {
-    setInput(input + value);
+    const cursorPosition = inputRef.current.selectionStart;
+    setInput(input.slice(0, cursorPosition) + value + input.slice(cursorPosition));
+  };
+
+  const handleBackspace = () => {
+    const cursorPosition = inputRef.current.selectionStart;
+    if (cursorPosition > 0) {
+      setInput(input.slice(0, cursorPosition - 1) + input.slice(cursorPosition));
+    }
   };
 
   const clearInput = () => {
@@ -24,13 +33,14 @@ function BasicCalculator() {
   return (
     <>
       <div className="bg-white rounded-lg shadow-lg shadow-green-500 p-6">
-          <h2 className="text-xl font-semibold mb-4 text-center">Basic Calculator</h2>
+        <h2 className="text-xl font-semibold mb-4 text-center">Basic Calculator</h2>
         <div className="mb-4">
           <input
             type="text"
             value={input}
             className="w-full text-right text-2xl border rounded-md p-2 outline-none"
             readOnly
+            ref={inputRef}
           />
         </div>
         <div className="grid grid-cols-4 gap-2">
@@ -135,6 +145,12 @@ function BasicCalculator() {
             onClick={() => calculateResult()}
           >
             =
+          </button>
+          <button
+            className="bg-red-500 text-white p-2 rounded-md hover:bg-red-600"
+            onClick={() => handleBackspace()}
+          >
+            Backspace
           </button>
         </div>
         <div className="mt-2">
