@@ -3,7 +3,7 @@ import React from "react";
 const TopBanner = () => {
   return (
     <header
-      className="relative bg-cover bg-center h-64 font-extrabold mb-5"
+      className="relative bg-cover bg-center h-64 font-extrabold my-6"
       style={{
         backgroundImage: "url('/bg_3.jpg')", // Replace with your image path
       }}

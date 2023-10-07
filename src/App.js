@@ -8,6 +8,7 @@ import Services from './pages/Services';
 import KnowledgeBase from './pages/KnowledgeBase';
 import Calculators from './pages/Calculators';
 import NotFound from './pages/NotFound';
+import Dashboard from './admin/Dashboard';
 
 import NavBar from './components/NavBar'
 import Footer from './components/Footer';
@@ -43,6 +44,9 @@ function App() {
             </Route>
             <Route exact path="/MoneyManagement">
               <MoneyManagement />
+            </Route>
+            <Route exact path="/admin/Dashboard">
+              <Dashboard />
             </Route>
             <Route path="*">
               <NotFound />

@@ -1,23 +1,36 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import the Link component
+import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('click', closeMenu);
+
+    return () => {
+      window.removeEventListener('click', closeMenu);
+    };
+  }, []);
+
   return (
     <nav className="bg-blue-500 p-4">
       <div className="container mx-auto flex justify-between items-center">
-        {/* Use Link to navigate to the Home page */}
         <div className="text-white font-bold text-xl">
           <Link to="/Home">E.I.G</Link>
         </div>
-        
-        {/* Hamburger Menu Icon */}
-        <div className="lg:hidden">
+
+        <div className="lg:hidden" ref={menuRef}>
           <button
             onClick={toggleMenu}
             className="text-white p-2 focus:outline-none focus:bg-blue-600"
@@ -36,13 +49,11 @@ const NavBar = () => {
           </button>
         </div>
 
-        {/* Menu Links */}
         <div className={`lg:flex ${isOpen ? 'block' : 'hidden'}`}>
           <ul className="lg:flex space-x-4 font-extrabold">
-            {/* Use Link to navigate to different pages */}
             <li>
-              <Link to="/Home" className="text-white hover:text-blue-200">
-                Home
+              <Link to="/admin/dashboard" className="text-white hover:text-blue-200">
+                Admin
               </Link>
             </li>
             <li>
@@ -56,13 +67,8 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/Services" className="text-white hover:text-blue-200">
-                Services
-              </Link>
-            </li>
-            <li>
               <Link to="/KnowledgeBase" className="text-white hover:text-blue-200">
-                Knowledge_Base
+                Knowledge Base
               </Link>
             </li>
             <li>
@@ -72,7 +78,7 @@ const NavBar = () => {
             </li>
             <li>
               <Link to="/MoneyManagement" className="text-white hover:text-blue-200">
-              Trade_Management
+                Trade Management
               </Link>
             </li>
           </ul>

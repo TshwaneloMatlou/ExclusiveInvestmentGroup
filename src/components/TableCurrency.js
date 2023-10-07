@@ -125,8 +125,8 @@ const TableCurrency = () => {
   };
 
   return (
-    <div className='shadow-lg shadow-blue-400 border-2 border-green-300 p-5'>
-      <h1 className='font-bold text-[25px] bg-green-300'>Template for (Consistent Currency)</h1>
+    <div className='shadow-lg shadow-blue-400 border-2 border-blue-300 p-5'>
+      <h1 className='font-bold text-[25px] bg-blue-300'>Template for (Consistent Currency)</h1>
       <table className="min-w-full bg-white border border-collapse border-black rounded-lg">
         <thead>
           <tr className="bg-gray-100">
@@ -169,8 +169,8 @@ const TableCurrency = () => {
             <tr
               key={index}
               className={`${
-                selectedRow === index ? 'bg-blue-200' : index % 2 === 0 ? 'bg-gray-100' : 'bg-white'
-              } cursor-pointer hover:bg-blue-100 border-b border-black`}
+                selectedRow === index ? 'bg-purple-400' : index % 2 === 0 ? 'bg-gray-100' : 'bg-white'
+              } cursor-pointer hover:bg-purple-200 border-b border-black`}
               onClick={() => handleRowClick(index)}
             >
               <td className="py-2 px-3 border-l border-r border-black">{row.id}</td>

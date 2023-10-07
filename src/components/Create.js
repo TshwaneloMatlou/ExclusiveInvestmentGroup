@@ -28,7 +28,7 @@ const Create = () => {
     return ( 
         <div>
             <h2 className="text-center font-semibold pb-2">Add a New Chart</h2>
-            <form onSubmit={handleSubmit}  className="grid m-3 shadow-2xl shadow-black">
+            <form onSubmit={handleSubmit}  className="grid m-16 p-16 shadow-2xl shadow-green-500">
              
                 <label className="text-center font-extrabold">Chart Title: </label>
                 <input 
