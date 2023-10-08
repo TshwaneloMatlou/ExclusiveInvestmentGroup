@@ -13,6 +13,7 @@ import Dashboard from './admin/Dashboard';
 import NavBar from './components/NavBar'
 import Footer from './components/Footer';
 import MoneyManagement from './pages/MoneyManagement';
+import LandingPage from './pages/LandingPage';
 
 
 
@@ -26,6 +27,9 @@ function App() {
           <Switch>
             <Route exact path="/Home">
               <Home />
+            </Route>
+            <Route exact path="/LandingPage">
+              <LandingPage />
             </Route>
             <Route exact path="/About">
               <About />

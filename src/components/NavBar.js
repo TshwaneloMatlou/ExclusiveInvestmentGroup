@@ -27,7 +27,7 @@ const NavBar = () => {
     <nav className="bg-blue-500 p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white font-bold text-xl">
-          <Link to="/Home">E.I.G</Link>
+          <Link to="/LandingPage">E.I.G</Link>
         </div>
 
         <div className="lg:hidden" ref={menuRef}>
