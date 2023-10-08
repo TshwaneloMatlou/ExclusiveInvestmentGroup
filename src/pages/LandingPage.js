@@ -6,9 +6,9 @@ const LandingPage = () => {
       {/* Hero Section */}
       <section className="bg-blue-900 text-white pt-20">
 
-        <div className="grid gap-28 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-center">
+        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-center">
           
-          <div>
+          <div className='mx-auto p-5'>
           <h1 className="text-4xl text-white font-extrabold mb-4">
             Welcome to Your Investment Journey
           </h1>
