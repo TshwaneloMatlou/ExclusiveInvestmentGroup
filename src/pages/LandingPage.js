@@ -4,8 +4,11 @@ const LandingPage = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-blue-900 text-white py-20">
-        <div className="container mx-auto text-center">
+      <section className="bg-blue-900 text-white pt-20">
+
+        <div className="grid gap-28 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-center">
+          
+          <div>
           <h1 className="text-4xl text-white font-extrabold mb-4">
             Welcome to Your Investment Journey
           </h1>
@@ -15,7 +18,17 @@ const LandingPage = () => {
           <button className="bg-green-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-full">
             Get Started
           </button>
+          </div>
+
+          <div>
+            <img
+                  src="/eig_logo.jpg"
+                  alt="Logo"
+                  className='w-[450px] h-[450px] pb-9 mx-auto'
+            />
+          </div>
         </div>
+        
       </section>
 
       {/* About Section */}
