@@ -137,6 +137,8 @@ const CompoundCalculator = () => {
             onChange={(e) => setCompoundingFrequency(e.target.value)}
             className="w-full border rounded-md p-2 focus:outline-none focus:ring focus:border-blue-300"
           >
+            <option value="annually">Annually</option>
+            <option value="quarterly">Quarterly</option>
             <option value="monthly">Monthly</option>
           </select>
         </div>
