@@ -1,7 +1,6 @@
 import React from 'react';
 import Create from '../components/Create';
 import BarChart from './BarChart';
-import LineChart from './LineChart';
 
 const Dashboard = () => {
   return (
@@ -9,7 +8,7 @@ const Dashboard = () => {
       <div>
         <Create />
       </div>
-      <div className='shadow-lg shadow-green-400 m-auto'>
+      <div className='shadow-lg shadow-green-400'>
         <BarChart />
       </div>
     </div>
