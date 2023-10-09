@@ -46,7 +46,7 @@ const BarChart = () => {
         },
         title: {
           display: true,
-          text: 'Daily Revenue',
+          text: 'Weekly Trades',
         },
       },
       maintainAspectRatio: false, // Disable the default aspect ratio
@@ -64,11 +64,8 @@ const BarChart = () => {
 
   return (
     <>
-      <div className='w-full overflow-x-auto relative md:col-span-2 lg:h-[70vh] h-[50vh] m-auto p-5 border rounded-lg bg-white'>
-        <h1 className='text-center font-extrabold text-[25pt] font-serif'>
-          Trade Data
-        </h1>
-        <Bar data={chartData} options={chartOptions} />
+      <div className='w-full overflow-x-auto relative md:col-span-2 lg:h-[70vh] h-[50vh] mx-auto my-5 border rounded-lg bg-white'>
+        <Bar className='m-5' data={chartData} options={chartOptions} />
       </div>
     </>
   );

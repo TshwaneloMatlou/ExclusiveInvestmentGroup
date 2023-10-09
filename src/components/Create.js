@@ -25,9 +25,9 @@ const Create = () => {
   };
 
   return (
-    <div className="container mx-auto mt-10 p-5">
-      <h2 className="text-center font-semibold text-2xl pb-4">Add a New Chart</h2>
+    <div className="container mx-auto my-5 ">
       <form onSubmit={handleSubmit} className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <h2 className="text-center font-semibold text-2xl pb-4">Add a New Chart</h2>
         <div className="mb-4">
           <label className="block text-lg font-semibold mb-2">Chart Title:</label>
           <input
