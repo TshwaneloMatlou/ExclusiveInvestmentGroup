@@ -9,11 +9,13 @@ import KnowledgeBase from './pages/KnowledgeBase';
 import Calculators from './pages/Calculators';
 import NotFound from './pages/NotFound';
 import Dashboard from './admin/Dashboard';
+import AdminPage from './admin/AdminPage';
 
 import NavBar from './components/NavBar'
 import Footer from './components/Footer';
 import MoneyManagement from './pages/MoneyManagement';
 import LandingPage from './pages/LandingPage';
+
 
 
 
@@ -25,6 +27,12 @@ function App() {
         <NavBar />
         <div>
           <Switch>
+            <Route exact path="/admin/Dashboard">
+              <Dashboard />
+            </Route>
+            <Route exact path="/admin/AdminPage">
+              <AdminPage />
+            </Route>
             <Route exact path="/Home">
               <Home />
             </Route>
@@ -48,9 +56,6 @@ function App() {
             </Route>
             <Route exact path="/MoneyManagement">
               <MoneyManagement />
-            </Route>
-            <Route exact path="/admin/Dashboard">
-              <Dashboard />
             </Route>
             <Route path="*">
               <NotFound />

@@ -12,8 +12,8 @@ const Home = () => {
 
   return (
     <div>
-      <TopBanner />
-      <TopCards />
+      <TopBanner /> 
+      <TopCards /> 
         <div>
             {/* Code Used to Display Error if we can't access Database   */}
             { error && <div>{ error }</div>}

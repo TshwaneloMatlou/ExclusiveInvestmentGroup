@@ -52,7 +52,7 @@ const NavBar = () => {
         <div className={`lg:flex ${isOpen ? 'block' : 'hidden'}`}>
           <ul className="lg:flex space-x-4 font-extrabold">
             <li>
-              <Link to="/admin/dashboard" className="text-white hover:text-blue-200">
+              <Link to="/admin/Dashboard" className="text-white hover:text-blue-200">
                 Admin
               </Link>
             </li>
