@@ -2,68 +2,70 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
 const Create = () => {
+  const [title, setTitle] = useState('');
+  const [body, setBody] = useState('');
+  const [author, setAuthor] = useState('Mario');
+  const [isPending, setIsPending] = useState(false);
+  const history = useHistory();
 
-    const [title, setTitle] = useState('');           
-    const [body, setBody] = useState('');   
-    const [author, setAuthor] = useState('Mario');  
-    const [isPending, SetIsPending] = useState(false);
-    const history = useHistory();
-    
-    const handleSubmit = (e) => {
-        const blog = {title, body, author}
+  const handleSubmit = (e) => {
+    const blog = { title, body, author };
 
-        SetIsPending(true);
+    setIsPending(true);
 
-        fetch('http://localhost:8000/blogs', {
-            method: 'POST',
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify (blog)
-        }).then(() => {
-            SetIsPending(false);
-            //history.go(-1);
-            history.push('/home');
-        })
-    }
+    fetch('http://localhost:8000/blogs', {
+      method: 'POST',
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(blog),
+    }).then(() => {
+      setIsPending(false);
+      //history.go(-1);
+      history.push('/home');
+    });
+  };
 
-    return ( 
-        <div>
-            <h2 className="text-center font-semibold pb-2">Add a New Chart</h2>
-            <form onSubmit={handleSubmit}  className="grid m-16 p-16 shadow-2xl shadow-green-500">
-             
-                <label className="text-center font-extrabold">Chart Title: </label>
-                <input 
-                    type="text"
-                    required
-                    value={title}
-                    onChange={(e) => setTitle(e.target.value)}
-                    className="border-2 border-blue-500 p-3 m-[5px] rounded shadow-2xl shadow-gray-500 "
-                />
-
-                <label className="text-center font-extrabold">Chart body: </label>
-                <textarea
-                    required
-                    value={body}
-                    onChange={(e) => setBody(e.target.value)}
-                    className="border-2  border-blue-500 p-3 m-[5px] rounded shadow-2xl shadow-gray-500"
-                ></textarea>
-
-                <label className="text-center font-extrabold">Chart Symbol/Pair: </label>
-                <select
-                    value={author}
-                    onChange={(e) => setAuthor(e.target.value)}
-                    className="border-2  border-blue-500 p-3 m-[5px] rounded shadow-2xl shadow-gray-500"
-                >
-                    <option value="mario">mario</option>
-                    <option value="yoshi">yoshi</option>
-                    
-                </select>
-
-                { !isPending && <button className="bg-green-500 rounded m-5 p-5 text-white font-extrabold">... Add New Chart ...</button> }
-                { isPending && <button className="bg-green-500 rounded m-5 p-5 text-red-500 font-extrabold">... Adding New Chart ...</button> }
-
-            </form>
+  return (
+    <div className="container mx-auto mt-10 p-5">
+      <h2 className="text-center font-semibold text-2xl pb-4">Add a New Chart</h2>
+      <form onSubmit={handleSubmit} className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <div className="mb-4">
+          <label className="block text-lg font-semibold mb-2">Chart Title:</label>
+          <input
+            type="text"
+            required
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+            className="w-full border-2 border-blue-500 p-3 rounded shadow-md"
+          />
         </div>
-     );
-}
- 
+
+        <div className="mb-4">
+          <label className="block text-lg font-semibold mb-2">Chart Body:</label>
+          <textarea
+            required
+            value={body}
+            onChange={(e) => setBody(e.target.value)}
+            className="w-full border-2 border-blue-500 p-3 rounded shadow-md"
+          ></textarea>
+        </div>
+
+        <div className="mb-4">
+          <label className="block text-lg font-semibold mb-2">Chart Symbol/Pair:</label>
+          <select
+            value={author}
+            onChange={(e) => setAuthor(e.target.value)}
+            className="w-full border-2 border-blue-500 p-3 rounded shadow-md"
+          >
+            <option value="Mario">Mario</option>
+            <option value="Yoshi">Yoshi</option>
+          </select>
+        </div>
+
+        { !isPending && <button className="w-full bg-green-500 rounded text-white font-semibold py-3">Add New Chart</button> }
+        { isPending && <button className="w-full bg-green-500 rounded text-red-500 font-semibold py-3">Adding New Chart</button> }
+      </form>
+    </div>
+  );
+};
+
 export default Create;

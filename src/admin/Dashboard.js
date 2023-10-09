@@ -4,7 +4,7 @@ import BarChart from './BarChart';
 
 const Dashboard = () => {
   return (
-    <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mb-5'>
+    <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mx-auto'>
       <div>
         <Create />
       </div>
