@@ -151,8 +151,8 @@ const TableCurrency = () => {
             <tr
               key={index}
               className={`${
-                selectedRow === index ? 'bg-purple-400' : index % 2 === 0 ? 'bg-gray-100' : 'bg-white'
-              } cursor-pointer hover:bg-purple-200 border-b border-black`}
+                selectedRow === index ? 'bg-green-400' : index % 2 === 0 ? 'bg-gray-100' : 'bg-white'
+              } cursor-pointer hover:bg-green-200 border-b border-black`}
               onClick={() => handleRowClick(index)}
             >
               <td className="py-2 px-3 border-l border-r border-black">{row.id}</td>

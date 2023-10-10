@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
 const Create = () => {
+  const initialDescription =
+    ' Direction: [  ], \n Stop Loss: [  ], \n Take Profit 1: [  ], \n Take Profit 2: [  ]';
+
   const [pair, setPair] = useState("");
-  const [description, setDescription] = useState("");
-  const [date, setDate] = useState("12/6/2023");
+  const [description, setDescription] = useState(initialDescription);
+  const [date, setDate] = useState("2023-01-01T00:00");
   const [weeklyZoomIn, setWeeklyZoomIn] = useState("");
   const [weeklyZoomOut, setWeeklyZoomOut] = useState("");
   const [isPending, setIsPending] = useState(false);
@@ -47,13 +50,22 @@ const Create = () => {
         </h2>
         <div className="mb-4">
           <label className="block text-lg font-semibold mb-2">Pair:</label>
-          <input
-            type="text"
-            required
+          <select
             value={pair}
+            required
             onChange={(e) => setPair(e.target.value)}
             className="w-full border-2 border-blue-500 p-3 rounded shadow-md"
-          />
+          >
+            <option value="DOLLAR INDEX">DOLLAR INDEX</option>
+            <option value="USDCAD">USDCAD</option>
+            <option value="USDCHF">USDCHF</option>
+            <option value="USDJPY">USDJPY</option>
+            <option value="XAUUSD">XAUUSD</option>
+            <option value="EURUSD">EURUSD</option>
+            <option value="GBPUSD">GBPUSD</option>
+            <option value="AUDUSD">AUDUSD</option>
+            <option value="NZDUSD">NZDUSD</option>
+          </select>
         </div>
 
         <div className="mb-4">
@@ -62,20 +74,19 @@ const Create = () => {
             required
             value={description}
             onChange={(e) => setDescription(e.target.value)}
-            className="w-full border-2 border-blue-500 p-3 rounded shadow-md"
+            className="w-full h-[125px] border-2 border-blue-500 p-3 rounded shadow-md"
           ></textarea>
         </div>
 
         <div className="mb-4">
-          <label className="block text-lg font-semibold mb-2">Date</label>
-          <select
+          <label className="block text-lg font-semibold mb-2">Date and Time</label>
+          <input
+            type="datetime-local"
             value={date}
+            required
             onChange={(e) => setDate(e.target.value)}
             className="w-full border-2 border-blue-500 p-3 rounded shadow-md"
-          >
-            <option value="12/5/2023">12/5/2023</option>
-            <option value="14/6/2023">14/6/2023</option>
-          </select>
+          />
         </div>
 
         <div className="mb-4 text-center">
@@ -103,7 +114,6 @@ const Create = () => {
             </div>
           </div>
         </div>
-
 
         {isPending && (
           <button className="w-full bg-green-500 rounded text-red-500 font-semibold py-3">

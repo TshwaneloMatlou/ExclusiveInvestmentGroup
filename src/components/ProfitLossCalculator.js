@@ -50,6 +50,18 @@ const CalculateProfitLoss = () => {
           />
         </div>
         <div className="flex flex-col">
+          <label className="mb-2" htmlFor="riskRewardRatio">
+            Risk : Reward
+          </label>
+          <input
+            className="px-2 py-1 border rounded"
+            type="text"
+            id="riskRewardRatio"
+            value={`1 : ${riskRewardRatio}`} // Display the ratio in the desired format
+            readOnly // Make this field read-only
+          />
+        </div>
+        <div className="flex flex-col">
           <label className="mb-2" htmlFor="stopLossPoints">
             Stop Loss Points:
           </label>
@@ -97,18 +109,7 @@ const CalculateProfitLoss = () => {
             readOnly // Make this field read-only
           />
         </div>
-        <div className="flex flex-col">
-          <label className="mb-2" htmlFor="riskRewardRatio">
-            Risk : Reward
-          </label>
-          <input
-            className="px-2 py-1 border rounded"
-            type="text"
-            id="riskRewardRatio"
-            value={`1 : ${riskRewardRatio}`} // Display the ratio in the desired format
-            readOnly // Make this field read-only
-          />
-        </div>
+
       </div>
       <div className="mt-4">
         <button

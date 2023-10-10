@@ -74,179 +74,43 @@
           "zoomOut": "image3_zoom"
         }
       },
-      "id": 1,
+      "id": 1
     },
     {
-      "pair": "GBPUSD",
-      "description": "Buy \n Stop Loss @ 1.25468 \n Take Profit 1 @ 1.25791 \n Take Profit 2 @ 1.25981",
-      "date": "4/9/2023",
+      "pair": "DOLLAR INDEX",
+      "description": "Direction: \"SELL\", Stop Loss: \"1.25648\", Take Profit 1: \"1.24574\", Take Profit 2: \"1.25453\"",
+      "date": "12/6/2023",
       "weekly": {
         "mainImage": {
-          "zoomIn": "image1",
-          "zoomOut": "image1_zoom"
-        },
-        "firstUpdate": {
-          "zoomIn": "image2",
-          "zoomOut": "image2_zoom"
-        },
-        "secondUpdate": {
-          "zoomIn": "image3",
-          "zoomOut": "image3_zoom"
-        }
-      },
-      "daily": {
-        "mainImage": {
-          "zoomIn": "image1",
-          "zoomOut": "image1_zoom"
-        },
-        "firstUpdate": {
-          "zoomIn": "image2",
-          "zoomOut": "image2_zoom"
-        },
-        "secondUpdate": {
-          "zoomIn": "image3",
-          "zoomOut": "image3_zoom"
-        }
-      },
-      "4hour": {
-        "mainImage": {
-          "zoomIn": "image1",
-          "zoomOut": "image1_zoom"
-        },
-        "firstUpdate": {
-          "zoomIn": "image2",
-          "zoomOut": "image2_zoom"
-        },
-        "secondUpdate": {
-          "zoomIn": "image3",
-          "zoomOut": "image3_zoom"
-        }
-      },
-      "1hour": {
-        "mainImage": {
-          "zoomIn": "image1",
-          "zoomOut": "image1_zoom"
-        },
-        "firstUpdate": {
-          "zoomIn": "image2",
-          "zoomOut": "image2_zoom"
-        },
-        "secondUpdate": {
-          "zoomIn": "image3",
-          "zoomOut": "image3_zoom"
-        }
-      },
-      "30minutes": {
-        "mainImage": {
-          "zoomIn": "image1",
-          "zoomOut": "image1_zoom"
-        },
-        "firstUpdate": {
-          "zoomIn": "image2",
-          "zoomOut": "image2_zoom"
-        },
-        "secondUpdate": {
-          "zoomIn": "image3",
-          "zoomOut": "image3_zoom"
+          "ZoomIn": "C:\\fakepath\\USDCHF_1H_22.PNG",
+          "ZoomOut": "C:\\fakepath\\USDCHF_D_22.PNG"
         }
       },
       "id": 2
     },
     {
-      "pair": "GBPUSD",
-      "description": "Buy \n Stop Loss @ 1.25468 \n Take Profit 1 @ 1.25791 \n Take Profit 2 @ 1.25981",
-      "date": "4/9/2023",
+      "pair": "XAUUSD",
+      "description": "Direction: \"1.2546\", Stop Loss: \"1.2455\", Take Profit 1: \"1.24864\", Take Profit 2: \"1.57784\"",
+      "date": "12/6/2023",
       "weekly": {
         "mainImage": {
-          "zoomIn": "image1",
-          "zoomOut": "image1_zoom"
-        },
-        "firstUpdate": {
-          "zoomIn": "image2",
-          "zoomOut": "image2_zoom"
-        },
-        "secondUpdate": {
-          "zoomIn": "image3",
-          "zoomOut": "image3_zoom"
-        }
-      },
-      "daily": {
-        "mainImage": {
-          "zoomIn": "image1",
-          "zoomOut": "image1_zoom"
-        },
-        "firstUpdate": {
-          "zoomIn": "image2",
-          "zoomOut": "image2_zoom"
-        },
-        "secondUpdate": {
-          "zoomIn": "image3",
-          "zoomOut": "image3_zoom"
-        }
-      },
-      "4hour": {
-        "mainImage": {
-          "zoomIn": "image1",
-          "zoomOut": "image1_zoom"
-        },
-        "firstUpdate": {
-          "zoomIn": "image2",
-          "zoomOut": "image2_zoom"
-        },
-        "secondUpdate": {
-          "zoomIn": "image3",
-          "zoomOut": "image3_zoom"
-        }
-      },
-      "1hour": {
-        "mainImage": {
-          "zoomIn": "image1",
-          "zoomOut": "image1_zoom"
-        },
-        "firstUpdate": {
-          "zoomIn": "image2",
-          "zoomOut": "image2_zoom"
-        },
-        "secondUpdate": {
-          "zoomIn": "image3",
-          "zoomOut": "image3_zoom"
-        }
-      },
-      "30minutes": {
-        "mainImage": {
-          "zoomIn": "image1",
-          "zoomOut": "image1_zoom"
-        },
-        "firstUpdate": {
-          "zoomIn": "image2",
-          "zoomOut": "image2_zoom"
-        },
-        "secondUpdate": {
-          "zoomIn": "image3",
-          "zoomOut": "image3_zoom"
+          "ZoomIn": "C:\\fakepath\\USDCHF_D_22.PNG",
+          "ZoomOut": "C:\\fakepath\\USDCHF_4H_22.PNG"
         }
       },
       "id": 3
     },
     {
-      "pair": "USDJPY",
-      "description": "Buy SL@ c5646a4fsdas",
-      "date": "12/6/2023",
-      "weeklyzoomIn": "C:\\fakepath\\USDCHF_1H_22.PNG",
-      "weeklyZoomOut": "",
-      "id": 4
-    },
-    {
-      "pair": "usdchf",
-      "description": "sell\nSL @ 481468\nTp1 @ 65561\ntp2 @ 561615",
-      "date": "12/6/2023",
+      "pair": "AUDUSD",
+      "description": " Direction: [ Buy ], \n Stop Loss: [ 1.26525 ], \n Take Profit 1: [ 1.26554 ], \n Take Profit 2: [ 1.20546 ]",
+      "date": "2023-10-29T19:18",
       "weekly": {
         "mainImage": {
-          "ZoomIn": "images_5",
-          "ZoomOut": "images_5"
+          "ZoomIn": "C:\\fakepath\\USDCHF_4H_22.PNG",
+          "ZoomOut": "C:\\fakepath\\USDCHF_D_22.PNG"
         }
       },
-      "id": 5
+      "id": 4
     }
   ]
 }

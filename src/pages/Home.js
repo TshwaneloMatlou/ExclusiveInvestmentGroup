@@ -2,7 +2,6 @@ import React from 'react'
 import useFetch from "../components/useFetch";
 import TopBanner from '../components/TopBanner'
 import TopCards from '../components/TopCards'
-import BottomBanner from '../components/BottomBanner'
 import ChartList from '../components/ChartList';
 
 const Home = () => {
@@ -29,7 +28,7 @@ const Home = () => {
         </div>
       <useFetch />
       
-      <BottomBanner />
+
     </div>
   )
 }
