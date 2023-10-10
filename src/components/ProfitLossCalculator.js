@@ -6,6 +6,7 @@ const CalculateProfitLoss = () => {
   const [stopLossMoney, setStopLossMoney] = useState('');
   const [takeProfitPoints, setTakeProfitPoints] = useState('0.00100');
   const [takeProfitMoney, setTakeProfitMoney] = useState('');
+  const [riskRewardRatio, setRiskRewardRatio] = useState('');
 
   const handleCalculate = () => {
     // Parse the input values to numbers
@@ -23,9 +24,13 @@ const CalculateProfitLoss = () => {
     const calculatedStopLossMoney = (parsedLotSize * parsedStopLossPoints * 100000).toFixed(2);
     const calculatedTakeProfitMoney = (parsedLotSize * parsedTakeProfitPoints * 100000).toFixed(2);
 
+    // Calculate Risk-Reward Ratio
+    const riskRewardRatioValue = (calculatedTakeProfitMoney / calculatedStopLossMoney).toFixed(0);
+
     // Update the state with the calculated values
     setStopLossMoney(calculatedStopLossMoney);
     setTakeProfitMoney(calculatedTakeProfitMoney);
+    setRiskRewardRatio(riskRewardRatioValue);
   };
 
   return (
@@ -89,6 +94,18 @@ const CalculateProfitLoss = () => {
             type="text"
             id="takeProfitMoney"
             value={takeProfitMoney}
+            readOnly // Make this field read-only
+          />
+        </div>
+        <div className="flex flex-col">
+          <label className="mb-2" htmlFor="riskRewardRatio">
+            Risk : Reward
+          </label>
+          <input
+            className="px-2 py-1 border rounded"
+            type="text"
+            id="riskRewardRatio"
+            value={`1 : ${riskRewardRatio}`} // Display the ratio in the desired format
             readOnly // Make this field read-only
           />
         </div>

@@ -1,162 +1,252 @@
 {
   "charts": [
     {
-      "id": 1,
       "pair": "EURUSD",
       "description": "Buy \n Stop Loss @ 1.25468 \n Take Profit 1 @ 1.25791 \n Take Profit 2 @ 1.25981",
       "date": "4/9/2023",
       "weekly": {
         "mainImage": {
-          "normal": "image1",
-          "zoom": "image1_zoom"
+          "zoomIn": "image1",
+          "zoomOut": "image1_zoom"
         },
-        "secondImage": {
-          "normal": "image2",
-          "zoom": "image2_zoom"
+        "firstUpdate": {
+          "zoomIn": "image2",
+          "zoomOut": "image2_zoom"
         },
-        "thirdImage": {
-          "normal": "image3",
-          "zoom": "image3_zoom"
+        "secondUpdate": {
+          "zoomIn": "image3",
+          "zoomOut": "image3_zoom"
         }
       },
       "daily": {
         "mainImage": {
-          "normal": "image1",
-          "zoom": "image1_zoom"
+          "zoomIn": "image1",
+          "zoomOut": "image1_zoom"
         },
-        "secondImage": {
-          "normal": "image2",
-          "zoom": "image2_zoom"
+        "firstUpdate": {
+          "zoomIn": "image2",
+          "zoomOut": "image2_zoom"
         },
-        "thirdImage": {
-          "normal": "image3",
-          "zoom": "image3_zoom"
+        "secondUpdate": {
+          "zoomIn": "image3",
+          "zoomOut": "image3_zoom"
         }
       },
       "4hour": {
         "mainImage": {
-          "normal": "image1",
-          "zoom": "image1_zoom"
+          "zoomIn": "image1",
+          "zoomOut": "image1_zoom"
         },
-        "secondImage": {
-          "normal": "image2",
-          "zoom": "image2_zoom"
+        "firstUpdate": {
+          "zoomIn": "image2",
+          "zoomOut": "image2_zoom"
         },
-        "thirdImage": {
-          "normal": "image3",
-          "zoom": "image3_zoom"
+        "secondUpdate": {
+          "zoomIn": "image3",
+          "zoomOut": "image3_zoom"
         }
       },
       "1hour": {
         "mainImage": {
-          "normal": "image1",
-          "zoom": "image1_zoom"
+          "zoomIn": "image1",
+          "zoomOut": "image1_zoom"
         },
-        "secondImage": {
-          "normal": "image2",
-          "zoom": "image2_zoom"
+        "firstUpdate": {
+          "zoomIn": "image2",
+          "zoomOut": "image2_zoom"
         },
-        "thirdImage": {
-          "normal": "image3",
-          "zoom": "image3_zoom"
+        "secondUpdate": {
+          "zoomIn": "image3",
+          "zoomOut": "image3_zoom"
         }
       },
       "30minutes": {
         "mainImage": {
-          "normal": "image1",
-          "zoom": "image1_zoom"
+          "zoomIn": "image1",
+          "zoomOut": "image1_zoom"
         },
-        "secondImage": {
-          "normal": "image2",
-          "zoom": "image2_zoom"
+        "firstUpdate": {
+          "zoomIn": "image2",
+          "zoomOut": "image2_zoom"
         },
-        "thirdImage": {
-          "normal": "image3",
-          "zoom": "image3_zoom"
+        "secondUpdate": {
+          "zoomIn": "image3",
+          "zoomOut": "image3_zoom"
         }
-      }
+      },
+      "id": 1,
     },
     {
-      "id": 2,
       "pair": "GBPUSD",
       "description": "Buy \n Stop Loss @ 1.25468 \n Take Profit 1 @ 1.25791 \n Take Profit 2 @ 1.25981",
       "date": "4/9/2023",
       "weekly": {
         "mainImage": {
-          "normal": "image1",
-          "zoom": "image1_zoom"
+          "zoomIn": "image1",
+          "zoomOut": "image1_zoom"
         },
-        "secondImage": {
-          "normal": "image2",
-          "zoom": "image2_zoom"
+        "firstUpdate": {
+          "zoomIn": "image2",
+          "zoomOut": "image2_zoom"
         },
-        "thirdImage": {
-          "normal": "image3",
-          "zoom": "image3_zoom"
+        "secondUpdate": {
+          "zoomIn": "image3",
+          "zoomOut": "image3_zoom"
         }
       },
       "daily": {
         "mainImage": {
-          "normal": "image1",
-          "zoom": "image1_zoom"
+          "zoomIn": "image1",
+          "zoomOut": "image1_zoom"
         },
-        "secondImage": {
-          "normal": "image2",
-          "zoom": "image2_zoom"
+        "firstUpdate": {
+          "zoomIn": "image2",
+          "zoomOut": "image2_zoom"
         },
-        "thirdImage": {
-          "normal": "image3",
-          "zoom": "image3_zoom"
+        "secondUpdate": {
+          "zoomIn": "image3",
+          "zoomOut": "image3_zoom"
         }
       },
       "4hour": {
         "mainImage": {
-          "normal": "image1",
-          "zoom": "image1_zoom"
+          "zoomIn": "image1",
+          "zoomOut": "image1_zoom"
         },
-        "secondImage": {
-          "normal": "image2",
-          "zoom": "image2_zoom"
+        "firstUpdate": {
+          "zoomIn": "image2",
+          "zoomOut": "image2_zoom"
         },
-        "thirdImage": {
-          "normal": "image3",
-          "zoom": "image3_zoom"
+        "secondUpdate": {
+          "zoomIn": "image3",
+          "zoomOut": "image3_zoom"
         }
       },
       "1hour": {
         "mainImage": {
-          "normal": "image1",
-          "zoom": "image1_zoom"
+          "zoomIn": "image1",
+          "zoomOut": "image1_zoom"
         },
-        "secondImage": {
-          "normal": "image2",
-          "zoom": "image2_zoom"
+        "firstUpdate": {
+          "zoomIn": "image2",
+          "zoomOut": "image2_zoom"
         },
-        "thirdImage": {
-          "normal": "image3",
-          "zoom": "image3_zoom"
+        "secondUpdate": {
+          "zoomIn": "image3",
+          "zoomOut": "image3_zoom"
         }
       },
       "30minutes": {
         "mainImage": {
-          "normal": "image1",
-          "zoom": "image1_zoom"
+          "zoomIn": "image1",
+          "zoomOut": "image1_zoom"
         },
-        "secondImage": {
-          "normal": "image2",
-          "zoom": "image2_zoom"
+        "firstUpdate": {
+          "zoomIn": "image2",
+          "zoomOut": "image2_zoom"
         },
-        "thirdImage": {
-          "normal": "image3",
-          "zoom": "image3_zoom"
+        "secondUpdate": {
+          "zoomIn": "image3",
+          "zoomOut": "image3_zoom"
         }
-      }
+      },
+      "id": 2
     },
     {
-      "pair": "dfyjgfn",
-      "description": "hggfh",
-      "date": "12/6/2023",
+      "pair": "GBPUSD",
+      "description": "Buy \n Stop Loss @ 1.25468 \n Take Profit 1 @ 1.25791 \n Take Profit 2 @ 1.25981",
+      "date": "4/9/2023",
+      "weekly": {
+        "mainImage": {
+          "zoomIn": "image1",
+          "zoomOut": "image1_zoom"
+        },
+        "firstUpdate": {
+          "zoomIn": "image2",
+          "zoomOut": "image2_zoom"
+        },
+        "secondUpdate": {
+          "zoomIn": "image3",
+          "zoomOut": "image3_zoom"
+        }
+      },
+      "daily": {
+        "mainImage": {
+          "zoomIn": "image1",
+          "zoomOut": "image1_zoom"
+        },
+        "firstUpdate": {
+          "zoomIn": "image2",
+          "zoomOut": "image2_zoom"
+        },
+        "secondUpdate": {
+          "zoomIn": "image3",
+          "zoomOut": "image3_zoom"
+        }
+      },
+      "4hour": {
+        "mainImage": {
+          "zoomIn": "image1",
+          "zoomOut": "image1_zoom"
+        },
+        "firstUpdate": {
+          "zoomIn": "image2",
+          "zoomOut": "image2_zoom"
+        },
+        "secondUpdate": {
+          "zoomIn": "image3",
+          "zoomOut": "image3_zoom"
+        }
+      },
+      "1hour": {
+        "mainImage": {
+          "zoomIn": "image1",
+          "zoomOut": "image1_zoom"
+        },
+        "firstUpdate": {
+          "zoomIn": "image2",
+          "zoomOut": "image2_zoom"
+        },
+        "secondUpdate": {
+          "zoomIn": "image3",
+          "zoomOut": "image3_zoom"
+        }
+      },
+      "30minutes": {
+        "mainImage": {
+          "zoomIn": "image1",
+          "zoomOut": "image1_zoom"
+        },
+        "firstUpdate": {
+          "zoomIn": "image2",
+          "zoomOut": "image2_zoom"
+        },
+        "secondUpdate": {
+          "zoomIn": "image3",
+          "zoomOut": "image3_zoom"
+        }
+      },
       "id": 3
+    },
+    {
+      "pair": "USDJPY",
+      "description": "Buy SL@ c5646a4fsdas",
+      "date": "12/6/2023",
+      "weeklyzoomIn": "C:\\fakepath\\USDCHF_1H_22.PNG",
+      "weeklyZoomOut": "",
+      "id": 4
+    },
+    {
+      "pair": "usdchf",
+      "description": "sell\nSL @ 481468\nTp1 @ 65561\ntp2 @ 561615",
+      "date": "12/6/2023",
+      "weekly": {
+        "mainImage": {
+          "ZoomIn": "images_5",
+          "ZoomOut": "images_5"
+        }
+      },
+      "id": 5
     }
   ]
 }
