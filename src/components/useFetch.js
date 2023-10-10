@@ -9,7 +9,7 @@ const useFetch = (url) => {
 
     useEffect(() => {
 
-        const abortCont = new AbortController();
+        const abortCont = new AbortController(); 
 
         fetch(url)
             .then(res => {

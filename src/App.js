@@ -15,6 +15,7 @@ import NavBar from './components/NavBar'
 import Footer from './components/Footer';
 import MoneyManagement from './pages/MoneyManagement';
 import LandingPage from './pages/LandingPage';
+import ChartDetails from './components/ChartDetails';
 
 
 
@@ -47,6 +48,9 @@ function App() {
             </Route>
             <Route exact path="/Services">
               <Services />
+            </Route>
+            <Route path="/charts/:id">
+              <ChartDetails />
             </Route>
             <Route exact path="/KnowledgeBase">
               <KnowledgeBase />

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const LandingPage = () => {
   return (
@@ -15,9 +16,11 @@ const LandingPage = () => {
           <p className="text-lg text-green-300 mb-8 underline">
             We help you achieve your financial goals.
           </p>
-          <button className="bg-green-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-full">
-            Get Started
-          </button>
+          <Link to='/Home'>  
+            <button className="bg-green-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-full">
+              Get Started
+            </button>
+          </Link>
           </div>
 
           <div>
@@ -83,9 +86,11 @@ const LandingPage = () => {
             Have questions or ready to start your investment journey? Contact us
             today.
           </p>
-          <button className="bg-green-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-full">
-            Contact Now
-          </button>
+          <Link to='./Contact'>
+            <button className="bg-green-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-full">
+              Contact Now
+            </button>
+          </Link>
         </div>
       </section>
     </div>

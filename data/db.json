@@ -1,82 +1,162 @@
 {
-  "blogs": [
+  "charts": [
     {
-      "title": "My First Blog",
-      "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted",
-      "author": "mario",
-      "id": 1
+      "id": 1,
+      "pair": "EURUSD",
+      "description": "Buy \n Stop Loss @ 1.25468 \n Take Profit 1 @ 1.25791 \n Take Profit 2 @ 1.25981",
+      "date": "4/9/2023",
+      "weekly": {
+        "mainImage": {
+          "normal": "image1",
+          "zoom": "image1_zoom"
+        },
+        "secondImage": {
+          "normal": "image2",
+          "zoom": "image2_zoom"
+        },
+        "thirdImage": {
+          "normal": "image3",
+          "zoom": "image3_zoom"
+        }
+      },
+      "daily": {
+        "mainImage": {
+          "normal": "image1",
+          "zoom": "image1_zoom"
+        },
+        "secondImage": {
+          "normal": "image2",
+          "zoom": "image2_zoom"
+        },
+        "thirdImage": {
+          "normal": "image3",
+          "zoom": "image3_zoom"
+        }
+      },
+      "4hour": {
+        "mainImage": {
+          "normal": "image1",
+          "zoom": "image1_zoom"
+        },
+        "secondImage": {
+          "normal": "image2",
+          "zoom": "image2_zoom"
+        },
+        "thirdImage": {
+          "normal": "image3",
+          "zoom": "image3_zoom"
+        }
+      },
+      "1hour": {
+        "mainImage": {
+          "normal": "image1",
+          "zoom": "image1_zoom"
+        },
+        "secondImage": {
+          "normal": "image2",
+          "zoom": "image2_zoom"
+        },
+        "thirdImage": {
+          "normal": "image3",
+          "zoom": "image3_zoom"
+        }
+      },
+      "30minutes": {
+        "mainImage": {
+          "normal": "image1",
+          "zoom": "image1_zoom"
+        },
+        "secondImage": {
+          "normal": "image2",
+          "zoom": "image2_zoom"
+        },
+        "thirdImage": {
+          "normal": "image3",
+          "zoom": "image3_zoom"
+        }
+      }
     },
     {
-      "title": "Opening Party!",
-      "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted",
-      "author": "yoshi",
-      "id": 2
+      "id": 2,
+      "pair": "GBPUSD",
+      "description": "Buy \n Stop Loss @ 1.25468 \n Take Profit 1 @ 1.25791 \n Take Profit 2 @ 1.25981",
+      "date": "4/9/2023",
+      "weekly": {
+        "mainImage": {
+          "normal": "image1",
+          "zoom": "image1_zoom"
+        },
+        "secondImage": {
+          "normal": "image2",
+          "zoom": "image2_zoom"
+        },
+        "thirdImage": {
+          "normal": "image3",
+          "zoom": "image3_zoom"
+        }
+      },
+      "daily": {
+        "mainImage": {
+          "normal": "image1",
+          "zoom": "image1_zoom"
+        },
+        "secondImage": {
+          "normal": "image2",
+          "zoom": "image2_zoom"
+        },
+        "thirdImage": {
+          "normal": "image3",
+          "zoom": "image3_zoom"
+        }
+      },
+      "4hour": {
+        "mainImage": {
+          "normal": "image1",
+          "zoom": "image1_zoom"
+        },
+        "secondImage": {
+          "normal": "image2",
+          "zoom": "image2_zoom"
+        },
+        "thirdImage": {
+          "normal": "image3",
+          "zoom": "image3_zoom"
+        }
+      },
+      "1hour": {
+        "mainImage": {
+          "normal": "image1",
+          "zoom": "image1_zoom"
+        },
+        "secondImage": {
+          "normal": "image2",
+          "zoom": "image2_zoom"
+        },
+        "thirdImage": {
+          "normal": "image3",
+          "zoom": "image3_zoom"
+        }
+      },
+      "30minutes": {
+        "mainImage": {
+          "normal": "image1",
+          "zoom": "image1_zoom"
+        },
+        "secondImage": {
+          "normal": "image2",
+          "zoom": "image2_zoom"
+        },
+        "thirdImage": {
+          "normal": "image3",
+          "zoom": "image3_zoom"
+        }
+      }
     },
     {
-      "title": "dfhdhd",
-      "body": "dhdfgfndf",
-      "author": "yoshi",
+      "pair": "dfyjgfn",
+      "description": "hggfh",
+      "date": "12/6/2023",
       "id": 3
-    },
-    {
-      "title": "hdf",
-      "body": "dfgtdfgfdg",
-      "author": "yoshi",
-      "id": 4
-    },
-    {
-      "title": "fgdgdfg",
-      "body": "dfgffd",
-      "author": "yoshi",
-      "id": 5
-    },
-    {
-      "title": "xdgnloxjoixcjc",
-      "body": "hfcf",
-      "author": "Mario",
-      "id": 6
-    },
-    {
-      "title": "tthato",
-      "body": "xdgtdfmfhfchcgftmhg",
-      "author": "Mario",
-      "id": 7
-    },
-    {
-      "title": "tsdghetn",
-      "body": "ty ,dtr6myftfdt",
-      "author": "yoshi",
-      "id": 8
-    },
-    {
-      "title": "chea",
-      "body": "fdasdfds",
-      "author": "Mario",
-      "id": 9
-    },
-    {
-      "title": "htfrg",
-      "body": "jfgthjgfh",
-      "author": "Mario",
-      "id": 10
-    },
-    {
-      "title": "tshwanello",
-      "body": "rgsrg",
-      "author": "Mario",
-      "id": 11
-    },
-    {
-      "title": "thato",
-      "body": "dfgdgdfgzsdf",
-      "author": "Mario",
-      "id": 12
-    },
-    {
-      "title": "gladys",
-      "body": "gffssfgssd",
-      "author": "Mario",
-      "id": 13
     }
   ]
 }

@@ -8,7 +8,7 @@ import ChartList from '../components/ChartList';
 const Home = () => {
 
    /** Connect to the useFetch.js and Displaying Data */
-   const {data, isPending, error} = useFetch('http://localhost:8000/blogs')
+   const {data, isPending, error} = useFetch('http://localhost:8000/charts')
 
   return (
     <div>
@@ -22,10 +22,10 @@ const Home = () => {
             { isPending && <div>Loading</div> }
 
             {/* Code Used to Display Data From The Database  */}
-            {data && <div className="lg:col-span-3"><ChartList blogs={data} title="All Charts!" /></div>}
+            {data && <div className="lg:col-span-3"><ChartList charts={data} title="All Charts!" /></div>}
 
             {/* Code Used to Filter Data From The Database 
-            <BlogList blogs={blogs.filter((blog) => blog.author === 'mario' )} title="Mario's Blogs!" /> */}
+            <BlogList charts={charts.filter((blog) => blog.author === 'mario' )} title="Mario's charts!" /> */}
         </div>
       <useFetch />
       

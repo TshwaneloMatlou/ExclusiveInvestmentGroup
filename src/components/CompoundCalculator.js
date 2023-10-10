@@ -12,9 +12,6 @@ const CompoundCalculator = () => {
   const [futureValue, setFutureValue] = useState('');
   const [calculationTable, setCalculationTable] = useState([]);
 
-  // Calculate the monthly interest rate based on the annual rate
-  //const monthlyInterestRate = parseFloat(annualInterestRate) / 12 / 100;
-
   // Function to calculate the future value
   const calculateFutureValue = () => {
     const pv = parseFloat(presentValue); // Convert present value to a floating-point number
@@ -23,25 +20,35 @@ const CompoundCalculator = () => {
     const t = getTimeLength(); // Get time length in years
     const ap = parseFloat(additionalPayments); // Convert additional payments to a floating-point number
     const pf = getPaymentFrequency(); // Get payment frequency
-  
+
+    // Calculate the monthly interest rate based on the compounding frequency
+    let monthlyInterestRate = r;
+    if (n === 12 && pf === 12 && compoundingFrequency === 'yearly') {
+      monthlyInterestRate = r / 12;
+    }
+
     let futureValue = pv; // Initialize future value
     let table = []; // Initialize calculation table
-  
+
+    // Inside the calculateFutureValue function
     for (let i = 0; i < t * n; i++) {
       let interest;
       if (i === 0) {
         // Calculate interest for the first row based on (pv * r / n)
-        interest = (pv * r);
+        interest = (pv * monthlyInterestRate);
       } else {
         // Calculate interest for subsequent rows based on (futureValue * r / n)
-        interest = (futureValue * r);
+        interest = (futureValue * monthlyInterestRate);
       }
-  
+
       const previousValue = futureValue; // Store the previous value for additional payments calculation
-      futureValue += interest; // Update the future value with interest
-      if ((i + 1) % (n / pf) === 0) {
+
+      // Check if additional payment should be applied based on payment frequency (monthly)
+      if ((i + 1) % (12 / pf) === 0) {
         futureValue += ap; // Add additional payment if applicable
       }
+
+      futureValue += interest; // Update the future value with interest
       table.push({
         period: i + 1,
         interest: interest.toFixed(2), // Store interest with 2 decimal places
@@ -49,7 +56,7 @@ const CompoundCalculator = () => {
         total: futureValue.toFixed(2), // Store total with 2 decimal places
       });
     }
-  
+
     setFutureValue(futureValue.toFixed(2)); // Update the future value in the state
     setCalculationTable(table); // Update the calculation table in the state
   };
