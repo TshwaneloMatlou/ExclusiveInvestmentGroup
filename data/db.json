@@ -2,7 +2,7 @@
   "charts": [
     {
       "pair": "EURUSD",
-      "description": "Buy \n Stop Loss @ 1.25468 \n Take Profit 1 @ 1.25791 \n Take Profit 2 @ 1.25981",
+      "description": "\n Direction: [ SELL ], \n Stop Loss: [ 1.25684 ], \n Take Profit 1: [ 1.26846 ], \n Take Profit 2: [ 1.98452 ]",
       "date": "4/9/2023",
       "weekly": {
         "mainImage": {
@@ -77,9 +77,9 @@
       "id": 1
     },
     {
-      "pair": "DOLLAR INDEX",
-      "description": "Direction: \"SELL\", Stop Loss: \"1.25648\", Take Profit 1: \"1.24574\", Take Profit 2: \"1.25453\"",
-      "date": "12/6/2023",
+      "pair": "USDCHF",
+      "description": "\n Direction: [ SELL ], \n Stop Loss: [ 1.25684 ], \n Take Profit 1: [ 1.26846 ], \n Take Profit 2: [ 1.98452 ]",
+      "date": "2023-01-26T02:04",
       "weekly": {
         "mainImage": {
           "ZoomIn": "C:\\fakepath\\USDCHF_1H_22.PNG",
@@ -89,25 +89,73 @@
       "id": 2
     },
     {
-      "pair": "XAUUSD",
-      "description": "Direction: \"1.2546\", Stop Loss: \"1.2455\", Take Profit 1: \"1.24864\", Take Profit 2: \"1.57784\"",
-      "date": "12/6/2023",
+      "pair": "AUDUSD",
+      "description": "\n Direction: [ BUY ], \n Stop Loss: [ 1.26574 ], \n Take Profit 1: [ 1.26854 ], \n Take Profit 2: [ 1.26584 ]",
+      "date": "2023-01-19T03:05",
       "weekly": {
         "mainImage": {
-          "ZoomIn": "C:\\fakepath\\USDCHF_D_22.PNG",
+          "ZoomIn": "C:\\fakepath\\USDCHF_1H_22.PNG",
+          "ZoomOut": "C:\\fakepath\\USDCHF_4H_22.PNG"
+        }
+      },
+      "daily": {
+        "mainImage": {
+          "ZoomIn": "C:\\fakepath\\USDCHF_1H_22.PNG",
+          "ZoomOut": "C:\\fakepath\\USDCHF_4H_22.PNG"
+        }
+      },
+      "hours4": {
+        "mainImage": {
+          "ZoomIn": "C:\\fakepath\\USDCHF_4H_22.PNG",
+          "ZoomOut": "C:\\fakepath\\USDCHF_4H_22.PNG"
+        }
+      },
+      "hour1": {
+        "mainImage": {
+          "ZoomIn": "C:\\fakepath\\USDCHF_1H_22.PNG",
+          "ZoomOut": "C:\\fakepath\\USDCHF_4H_22.PNG"
+        }
+      },
+      "minutes30": {
+        "mainImage": {
+          "ZoomIn": "C:\\fakepath\\USDCHF_1H_22.PNG",
           "ZoomOut": "C:\\fakepath\\USDCHF_4H_22.PNG"
         }
       },
       "id": 3
     },
     {
-      "pair": "AUDUSD",
-      "description": " Direction: [ Buy ], \n Stop Loss: [ 1.26525 ], \n Take Profit 1: [ 1.26554 ], \n Take Profit 2: [ 1.20546 ]",
-      "date": "2023-10-29T19:18",
+      "pair": "USDJPY",
+      "description": "\n Direction: [ 5 ], \n Stop Loss: [ 52 ], \n Take Profit 1: [ 5 ], \n Take Profit 2: [  7]",
+      "date": "2023-01-25T00:03",
       "weekly": {
         "mainImage": {
-          "ZoomIn": "C:\\fakepath\\USDCHF_4H_22.PNG",
-          "ZoomOut": "C:\\fakepath\\USDCHF_D_22.PNG"
+          "ZoomIn": "",
+          "ZoomOut": ""
+        }
+      },
+      "daily": {
+        "mainImage": {
+          "ZoomIn": "",
+          "ZoomOut": ""
+        }
+      },
+      "hours4": {
+        "mainImage": {
+          "ZoomIn": "",
+          "ZoomOut": ""
+        }
+      },
+      "hour1": {
+        "mainImage": {
+          "ZoomIn": "",
+          "ZoomOut": ""
+        }
+      },
+      "minutes30": {
+        "mainImage": {
+          "ZoomIn": "",
+          "ZoomOut": ""
         }
       },
       "id": 4
